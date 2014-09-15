@@ -32,3 +32,11 @@ Scenario: type title is normalized
     When adding a new content type
      and type title is  Boîte à outils
     then type id should become  boite_a_outils
+
+
+Scenario: Expiration Date is before Publishing Date
+    Log in as site owner
+    Go to  ${PLONE_URL}
+    Debug
+    Create Content
+
